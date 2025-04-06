@@ -1146,11 +1146,7 @@ yellow.yellow {
 .probootstrap-section-heading .heading {
 	margin-top: 0
 }
-.flexslider,
-.flexslider .slides>li,
-.slider-height {
-	overflow: hidden
-}
+
 .lead {
 	font-size: 20px
 }

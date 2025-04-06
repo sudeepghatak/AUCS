@@ -200,11 +200,12 @@ a.close:link {
 }
 
 .probootstrap-header {
-  position: absolute;
+  position: relative;
+  z-index: 1000;
+  /* Ensure the header is above other elements */
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 2;
   background-color: rgba(20, 2, 0, 1);
 }
 
@@ -326,114 +327,200 @@ a.close:link {
 
 
 .banner-form {
-    position: absolute;
-    top: 170px;
-    right: 0;
+  position: absolute;
+  top: 170px;
+  right: 0;
 }
+
 .banner-form h2 {
-    color: #fff;
+  color: #fff;
 }
+
 .banner-form form .form-group label {
-    font-size: 14px;
-    width: 100%;
-    color: #fff;
-    font-weight: 500;
+  font-size: 14px;
+  width: 100%;
+  color: #fff;
+  font-weight: 500;
 }
+
 .banner-form form .form-group input {
-    width: 100%;
-    border-radius: 4px;
-    border: none;
-    height: 40px;
-    padding: 10px;
+  width: 100%;
+  border-radius: 4px;
+  border: none;
+  height: 40px;
+  padding: 10px;
 }
+
 .banner-form form .form-group input:focus {
-    outline: none;
+  outline: none;
 }
+
 .banner-form form .form-group textarea {
-    width: 100%;
-    padding: 7px;
-    height: 60px;
-    border-radius: 4px;
+  width: 100%;
+  padding: 7px;
+  height: 60px;
+  border-radius: 4px;
 }
-.banner-form form .form-group  input[type="submit"] {
-    background: #ffa500;
-    color: #fff;
-    line-height: 18px;
+
+.banner-form form .form-group input[type="submit"] {
+  background: #ffa500;
+  color: #fff;
+  line-height: 18px;
 }
 
 
 .btn-floating {
-    position: fixed;
-    right: 20px;
-    overflow: hidden;
-    width: 50px;
-    height: 50px;
-    border-radius: 100px;
-    border: 0;
-    z-index: 9999;
-    color: white;
-    transition: .2s;
+  position: fixed;
+  right: 20px;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  border: 0;
+  z-index: 9999;
+  color: white;
+  transition: .2s;
 }
 
 .btn-floating:hover {
-    width: auto;
-    padding: 0 20px;
-    cursor: pointer;
+  width: auto;
+  padding: 0 20px;
+  cursor: pointer;
 }
 
 .btn-floating span {
-    font-size: 16px; 
-    margin-left: 5px;
-    transition: .2s;
-    line-height: 0px;
-    display: none;
+  font-size: 16px;
+  margin-left: 5px;
+  transition: .2s;
+  line-height: 0px;
+  display: none;
 }
 
 .btn-floating:hover span {
-    display: inline-block;
+  display: inline-block;
 }
 
 /* Phone */
 .btn-floating.phone {
-    bottom: 85px;
-    background-color: #ffa500;
+  bottom: 85px;
+  background-color: #ffa500;
 }
 
 .btn-floating.phone:hover {
-    background-color: #ffa500;
-}
-.btn-floating.phone {
-    opacity: 0;
-    visibility: hidden;
+  background-color: #ffa500;
 }
 
-@media(max-width: 767px){
 .btn-floating.phone {
-      opacity: 1;
-      visibility: visible;
+  opacity: 0;
+  visibility: hidden;
 }
-.about-us-banner-ad {
+
+@media(max-width: 767px) {
+  .btn-floating.phone {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .about-us-banner-ad {
     margin: 20px auto;
-}
-.about-us-banner {
+  }
+
+  .about-us-banner {
     right: 0;
-}
-img.about-us {
+  }
+
+  img.about-us {
     height: 1046px;
-}
-.banner-form {
+  }
+
+  .banner-form {
     padding: 20px;
-}
-.probootstrap-slider {
+  }
+
+  .probootstrap-slider {
     position: relative;
     height: auto;
     background: #381410;
-}
-img.about-us {
+  }
+
+  img.about-us {
     opacity: 0;
     visibility: hidden;
-}
-.banner-form {
+  }
+
+  .banner-form {
     top: 440px;
+  }
 }
+
+/* General Dropdown Menu Styles */
+.nav-menu .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  z-index: 1050; /* Ensure dropdown menus are above the header */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  min-width: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.nav-menu .dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+/* Ensure submenus are positioned correctly */
+.nav-menu .dropdown-submenu {
+  position: relative;
+}
+
+.nav-menu .dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: 0;
+  border-left: 1px solid #ddd;
+  z-index: 1050; /* Ensure submenus are above other elements */
+}
+
+/* Mobile-Friendly Dropdown Behavior */
+@media (max-width: 768px) {
+  .nav-menu .dropdown-menu {
+    position: static;
+    display: none;
+    /* Hidden by default */
+    background-color: #fff;
+    border: none;
+    box-shadow: none;
+  }
+
+  .nav-menu .dropdown:hover>.dropdown-menu {
+    display: none;
+    /* Disable hover behavior on mobile */
+  }
+
+  .nav-menu .dropdown.open>.dropdown-menu {
+    display: block;
+    /* Show dropdown when toggled */
+  }
+
+  .nav-menu .dropdown-submenu .dropdown-menu {
+    position: static;
+    border-left: none;
+  }
+}
+
+/* Accessibility Enhancements */
+.nav-menu .dropdown-menu>li>a:focus {
+  background-color: #f8f9fa;
+  color: #000;
+  outline: none;
+}
+
+/* Ensure the container does not clip the dropdown menus */
+.container {
+  overflow: visible; /* Allow dropdown menus to overflow the container */
 }
