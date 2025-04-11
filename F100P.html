@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="css/style.min.css" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
   <!--[if lt IE 9]>
@@ -63,84 +64,77 @@
 
     </div>
     <header role="banner" class="probootstrap-header">
-      <div class="container">
-        <div class="header-content">
-          <a href="index.html"><img class="logo" src="img/logo.png" width="100px" height="100px"></a>
-          <nav id="nav-menu-container" class="probootstrap-nav">
-            <ul class="nav-menu">
-              <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li class="dropdown">
-                <a href="machines.html" class="dropdown-toggle" onclick="window.location.href='machines.html';"
-                  data-toggle="dropdown">
-                  Coffee Machines
-                </a>
-                <ul class="dropdown-menu">
-                  <!-- Second Level: Instant Coffee Machines -->
-                  <li class="dropdown-submenu">
-                    <a href="instant-coffee-machines.html">Instant Coffee Machines</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="instant5500.html">Instant 5500</a></li>
-                      <li><a href="instant4400.html">Instant 4400</a></li>
-                      <li><a href="instant4300.html">Instant 4300</a></li>
-                      <li><a href="jl21-IN5c.html">JL21-IN5C</a></li>
-                    </ul>
-                  </li>
-                  <!-- Second Level: Espresso Machines -->
-                  <li class="dropdown-submenu">
-                    <a href="espresso-machines.html">Espresso Machines</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="minibar-s.html">Minibar S</a></li>
-                      <li><a href="jura-s8.html">Jura S8 Chrome</a></li>
-                      <li><a href="f100p.html">F 100P Soluble</a></li>
-                      <li><a href="JL31B.html">JL 31 B</a></li>
-                    </ul>
-                  </li>
-                  <!-- Second Level: Cappuccino Machines -->
-                  <li class="dropdown-submenu">
-                    <a href="cappuccino-machines.html">Cappuccino Machines</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="krea.html">KREA</a></li>
-                      <li><a href="kreaprime.html">KREA PRIME</a></li>
-                      <li><a href="koromax.html">KORO PRIME MAX</a></li>
-                      <li><a href="korinto-es.html">Korinto Prime Espresso</a></li>
-                    </ul>
-                  </li>
-                  <!-- Second Level: Black Coffee Machines -->
-                  <li class="dropdown-submenu">
-                    <a href="black-coffee-machines.html">Black Coffee Machines</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="krea.html">KREA</a></li>
-                      <li><a href="kreaprime.html">KREA PRIME</a></li>
-                      <li><a href="koromax.html">KORO PRIME MAX</a></li>
-                      <li><a href="minibar-s.html">Minibar S</a></li>
-                    </ul>
-                  </li>
-                  <!-- Second Level: Hot Chocolate Machines -->
-                  <li class="dropdown-submenu">
-                    <a href="hot-chocolate-machines.html">Hot Chocolate Machines</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="instant5500.html">Instant 5500</a></li>
-                      <li><a href="instant4400.html">Instant 4400</a></li>
-                      <li><a href="instant4300.html">Instant 4300</a></li>
-                      <li><a href="JL21IN5C.html">JUL21-IN5C</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li><a href="rent-free-machines.html">Rent Free Machines</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="coffee-tea-supplies.html">Coffee and Tea Supplies</a></li>
-              <li><a class="orangecolor" href="contact.html">Contact</a></li>
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html"><img class="logo" src="img/logo.png" width="100px" height="100px"></a>
+        <nav id="nav-menu-container" class="probootstrap-nav">
+          <ul class="nav-menu">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+              <a href="machines.html" class="dropdown-toggle" onclick="window.location.href='machines.html';"
+                data-toggle="dropdown">
+                All Machines
+              </a>
+              <ul class="dropdown-menu">
+                <!-- Second Level: Cappuccino Machines -->
+                <li class="dropdown-submenu">
+                  <a href="cappuccino-machines.html">Cappuccino Machines</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="minibar-s.html">Minibar S</a></li>
+                    <li><a href="jura-s8.html">Jura S8 Chrome</a></li>
+                    <li><a href="f100p.html">F 100P Soluble</a></li>
+                    <li><a href="jl31b.html">JL 31 B Fresh Milk</a></li>
+                    <li><a href="jl24es4c.html">JL24 - ES4C</a></li>
+                    <li><a href="instant5500.html">Instant 5500</a></li>
+                  </ul>
+                </li>
+                <!-- Second Level: Espresso Machines -->
+                <li class="dropdown-submenu">
+                  <a href="espresso-machines.html">Espresso Machines</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="minibar-s.html">Minibar S</a></li>
+                    <li><a href="jura-s8.html">Jura S8 Chrome</a></li>
+                    <li><a href="f100p.html">F 100P Soluble</a></li>
+                    <li><a href="jl31b.html">JL 31 B Fresh Milk</a></li>
+                  </ul>
+                </li>
 
-            </ul>
-          </nav>
-          <div class="hamburger">
-            <i class="fa fa-bars"></i>
-          </div>
+                <!-- Second Level: Black Coffee Machines -->
+                <li class="dropdown-submenu">
+                  <a href="black-coffee-machines.html">Black Coffee Machines</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="krea.html">KREA</a></li>
+                    <li><a href="kreaprime.html">KREA PRIME</a></li>
+                    <li><a href="koromax.html">KORO PRIME MAX</a></li>
+                    <li><a href="minibar-s.html">Minibar S</a></li>
+                  </ul>
+                </li>
+                <!-- Second Level: Hot Chocolate Machines -->
+                <li class="dropdown-submenu">
+                  <a href="hot-chocolate-machines.html">Hot Chocolate Machines</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="instant5500.html">Instant 5500</a></li>
+                    <li><a href="instant4400.html">Instant 4400</a></li>
+                    <li><a href="instant4300.html">Instant 4300</a></li>
+                    <li><a href="jl21in5c.html">JUL21-IN5C</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="rent-free-machines.html">Rent Free Machines</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="coffee-tea-supplies.html">Coffee and Tea Supplies</a></li>
+            <li><a class="orangecolor" href="contact.html">Contact</a></li>
+
+          </ul>
+        </nav>
+        <div class="hamburger">
+          <i class="fa fa-bars"></i>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
   </section>
   <!-- END: header -->
   <section class="probootstrap-slider machine-flexslider">

@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="css/style.min.css" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
   <!--[if lt IE 9]>
@@ -49,17 +50,15 @@
 
 <body>
   <!-- START: header -->
-
-  <div class="probootstrap-loader"></div>
   <section>
     <div class="text-right topbar">
-      <li class="email-top">
-        <i class="icon-mail"></i><a class="email"
-          href="mailto:sales@coffeeandteavending.com.au">sales@coffeeandteavending.com.au</a>
-      </li>
+      <li class="email-top"><i class="icon-mail"></i><a class="email"
+          href="mailto:sales@coffeeandteavending.com.au">sales@coffeeandteavending.com.au</a></li>
       <li><i class="icon-phone2"></i><span>1300 942 403</span></li>
     </div>
   </section>
+  <div class="probootstrap-loader"></div>
+
   <section class="probootstrap-slider flexslider">
     <div class="flexheight">
 
@@ -68,21 +67,73 @@
       <div class="container">
         <div class="header-content">
           <a href="index.html"><img class="logo" src="img/logo.png" width="100px" height="100px"></a>
-          <nav role="navigation" class="probootstrap-nav hidden-xs">
-            <ul class="probootstrap-main-nav">
+          <nav id="nav-menu-container" class="probootstrap-nav">
+            <ul class="nav-menu">
               <li class="active"><a href="index.html">Home</a></li>
               <li><a href="about.html">About</a></li>
-              <li><a href="machines.html">Coffee Machines</a></li>
+              <li class="dropdown">
+                <a href="machines.html" class="dropdown-toggle" onclick="window.location.href='machines.html';"
+                  data-toggle="dropdown">
+                  All Machines
+                </a>
+                <ul class="dropdown-menu">
+                  <!-- Second Level: Cappuccino Machines -->
+                  <li class="dropdown-submenu">
+                    <a href="cappuccino-machines.html">Cappuccino Machines</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="minibar-s.html">Minibar S</a></li>
+                      <li><a href="jura-s8.html">Jura S8 Chrome</a></li>
+                      <li><a href="f100p.html">F 100P Soluble</a></li>
+                      <li><a href="jl31b.html">JL 31 B Fresh Milk</a></li>
+                      <li><a href="jl24es4c.html">JL24 - ES4C</a></li>
+                      <li><a href="instant5500.html">Instant 5500</a></li>
+                    </ul>
+                  </li>
+                  <!-- Second Level: Espresso Machines -->
+                  <li class="dropdown-submenu">
+                    <a href="espresso-machines.html">Espresso Machines</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="minibar-s.html">Minibar S</a></li>
+                      <li><a href="jura-s8.html">Jura S8 Chrome</a></li>
+                      <li><a href="f100p.html">F 100P Soluble</a></li>
+                      <li><a href="jl31b.html">JL 31 B Fresh Milk</a></li>
+                    </ul>
+                  </li>
+
+                  <!-- Second Level: Black Coffee Machines -->
+                  <li class="dropdown-submenu">
+                    <a href="black-coffee-machines.html">Black Coffee Machines</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="krea.html">KREA</a></li>
+                      <li><a href="kreaprime.html">KREA PRIME</a></li>
+                      <li><a href="koromax.html">KORO PRIME MAX</a></li>
+                      <li><a href="minibar-s.html">Minibar S</a></li>
+                    </ul>
+                  </li>
+                  <!-- Second Level: Hot Chocolate Machines -->
+                  <li class="dropdown-submenu">
+                    <a href="hot-chocolate-machines.html">Hot Chocolate Machines</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="instant5500.html">Instant 5500</a></li>
+                      <li><a href="instant4400.html">Instant 4400</a></li>
+                      <li><a href="instant4300.html">Instant 4300</a></li>
+                      <li><a href="jl21in5c.html">JUL21-IN5C</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
               <li><a href="rent-free-machines.html">Rent Free Machines</a></li>
               <li><a href="services.html">Services</a></li>
               <li><a href="coffee-tea-supplies.html">Coffee and Tea Supplies</a></li>
-              <li><a class="btn btn-primary btn-sm" href="contact.html">Contact</a></li>
+              <li><a class="orangecolor" href="contact.html">Contact</a></li>
+
             </ul>
           </nav>
           <div class="hamburger">
             <i class="fa fa-bars"></i>
           </div>
         </div>
+      </div>
     </header>
   </section>
   <!-- END: header -->
@@ -100,18 +151,15 @@
               <p>632 (H) *300 (W)* 462(D)</p>
               <p class="head">DESCRIPTION:</p>
               <p>
-                This machine is much smaller in size and is perfect for a
-                medium sized factory or office. Suitable for 100-150 cups per
-                day. Can also be programmed to dispense real strong instant
-                coffee. Available on a zero monthly rental scheme (condition
-                applied) OR a very low weekly rental.
+                This machine is much smaller in size and is perfect for a medium sized factory or office. Suitable for
+                100-150 cups per day. Can also be programmed to dispense real strong instant coffee. Available on a zero
+                monthly rental scheme (condition applied) OR a very low weekly rental.
               </p>
               <p class="head">FEATURES:</p>
               <ul>
                 <li>4 canister & 4 mixer configuration</li>
                 <li>Very Light only 19.4 kgs</li>
                 <li>Can have its own water tank or plumbed</li>
-
                 <li>Easy to clean and service</li>
                 <li>Due to its small size can be placed anywhere</li>
               </ul>
@@ -120,12 +168,10 @@
             <div class="lower-section">
               <p class="head">SELECTIONS:</p>
               <p>
-                Cappuccino, Long Black, Espresso, Chocolate ,Mochaccino, Chai
-                latte Milk, Hot Water, Flat White, Plain tea or Lemon tea or
-                Ginger Tea with milk, Coffee with Milk ( Can have 10 possible
-                selections including 1 tea selection)
+                Cappuccino, Long Black, Espresso, Chocolate ,Mochaccino, Chai latte Milk, Hot Water, Flat White, Plain
+                tea or Lemon tea or Ginger Tea with milk, Coffee with Milk ( Can have 10 possible selections including 1
+                tea selection)
               </p>
-              <p></p>
             </div>
             <div class="lower-section">
               <p class="head">SUITABLE FOR:</p>
@@ -139,7 +185,7 @@
                 <li>Hotels</li>
                 <li>Restaurants</li>
                 <li>Airport</li>
-                <li>University </li>
+                <li>University</li>
                 <li>Library</li>
               </ul>
             </div>
@@ -148,7 +194,7 @@
         <table>
           <tr>
             <td>
-              <a href="rent-free-machines.html">
+              <a href="machines.html">
                 <div class="fa fa-arrow-circle-left eachdetails"></div>
               </a>
             </td>
@@ -162,7 +208,68 @@
       </div>
     </div>
   </section>
+  <div class="container">
+    <h2 class="height-fifty">You may also like to explore the following </h2>
+  </div>
+
   <!-- END: slider  -->
+  <section class="probootstrap-section">
+    <div class="container">
+      <div class="selectors">
+
+
+      </div>
+
+
+
+      <div
+        class="col-lg-4 col-md-4 col-sm-6 col-xs-12 probootstrap-animate fadeIn probootstrap-animated fifty-plus beans-granulated-milk"
+        data-animate-effect="fadeIn">
+        <div class="product-item">
+          <figure><a href="instant4300.html"><img src="img/Instant4300.jpg" alt="Instant 4300"
+                class="img-responsive"></a>
+          </figure>
+          <div class="text">
+            <h2 class="heading">INSTANT 4300</h2>
+            <p><a href="instant4300.html" class="details">View Details</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="col-lg-4 col-md-4 col-sm-6 col-xs-12 probootstrap-animate fadeIn probootstrap-animated fifty-plus beans-granulated-milk"
+        data-animate-effect="fadeIn">
+        <div class="product-item">
+          <figure><a href="instant2200.html"><img src="img/Instant2200.jpg" alt="Instant 2200"
+                class="img-responsive"></a>
+          </figure>
+          <div class="text">
+            <h2 class="heading">INSTANT 2200</h2>
+            <p><a href="instant2200.html" class="details">View Details</a></p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 probootstrap-animate" data-animate-effect="fadeIn">
+        <div class="product-item">
+          <figure><a href="instant4400.html"><img src="img/Instant4400.jpg" alt="Jura S8" class="img-responsive">
+          </figure></a></figure>
+          <div class="text">
+            <h2 class="heading">INSTANT 4400</h2>
+
+            <p><a href="instant4400.html" class="details">View Details</a></p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+    </div>
+  </section>
 
   <footer-component></footer-component>
   <sticky-component></sticky-component>
